@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#130b25">
+  <meta
+    name="description"
+    content="Uma pequena experiência interativa feita com carinho."
+  >
+
+  <title>Um site só para você ✨</title>
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="locked">
+  <noscript>
+    <div class="noscript">
+      Ative o JavaScript para ver todas as surpresas.
+    </div>
+  </noscript>
+
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div id="floating-hearts" aria-hidden="true"></div>
+
+  <section class="gate" id="gate" aria-label="Tela de entrada">
+    <div class="stars" aria-hidden="true"></div>
+
+    <div class="gate-card glass">
+      <span class="eyebrow">AVISO</span>
+      <h1>Pode conter informações demais</h1>
+      <p>Tem certeza de que quer entrar?</p>
+
+      <div class="gate-actions">
+        <button class="btn primary" id="enter-btn" type="button">
+          Quero arriscar ✨
+        </button>
+
+        <button class="btn ghost runaway" id="runaway-btn" type="button">
+          Melhor não, cedo demais.
+        </button>
+      </div>
+
+     
+    </div>
+  </section>
+
+  <main id="main" aria-hidden="true">
+    <section class="hero section" id="inicio" aria-labelledby="titulo-principal">
+      <div class="blob blob-a" aria-hidden="true"></div>
+      <div class="blob blob-b" aria-hidden="true"></div>
+
+      <nav class="topbar" aria-label="Navegação principal">
+        <a class="brand" href="#inicio" aria-label="Voltar ao início">
+          <span aria-hidden="true">♡</span>
+          só para Lais
+        </a>
+
+        <div>
+          <a href="#motivos">Motivos</a>
+          <a href="#jogo">Jogo</a>
+          <a href="#surpresa">Surpresa</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <p class="reveal muted">
+          Eu não sabia como dizer isso, já que voce disse que era muito gay.
+        </p>
+
+        <h1 id="titulo-principal">
+          então fiz um <em>app inteiro</em>
+        </h1>
+
+        <p class="typing" aria-live="polite">
+          <span id="typed"></span><i aria-hidden="true">|</i>
+        </p>
+
+        <div class="hero-actions reveal">
+          <a class="btn primary" href="#motivos">
+            Descobrir o motivo
+          </a>
+
+          <button class="btn ghost" id="music-btn" type="button">
+            <span id="music-icon" aria-hidden="true">♫</span>
+            <span id="music-label">Tocar musiquinha</span>
+          </button>
+        </div>
+
+        <div class="orbit" aria-hidden="true">
+          <div></div>
+          <div></div>
+          <b>♥</b>
+        </div>
+      </div>
+
+      <a class="scroll" href="#motivos" aria-label="Ir para a próxima seção">
+        <span>continue</span>
+        <i aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <section class="section soft" id="motivos" aria-labelledby="titulo-motivos">
+      <header class="section-title reveal">
+        <span class="eyebrow">PEQUENOS DETALHES</span>
+        <h2 id="titulo-motivos">Algumas coisas que eu gosto em você</h2>
+        <p>Clique nas cartas. Cada uma esconde um motivo.</p>
+      </header>
+
+      <div class="cards">
+        <button class="reason reveal" type="button" aria-label="Abrir motivo: seu sorriso">
+          <span class="inner">
+            <span class="front">
+              <i aria-hidden="true">😊</i>
+              <strong>Seu sorriso</strong>
+              <small>clique para abrir</small>
+            </span>
+
+            <span class="back">
+              <strong>Seu sorriso</strong>
+              <p>Seu sorriso desperta uma puta felicidade em mim, que eu nao consigo explicar com palavras.</p>
+            </span>
+          </span>
+        </button>
+
+        <button class="reason reveal" type="button" aria-label="Abrir motivo: seu jeito">
+          <span class="inner">
+            <span class="front">
+              <i aria-hidden="true">✨</i>
+              <strong>Sua paciencia</strong>
+              <small>clique para abrir</small>
+            </span>
+
+            <span class="back">
+              <strong>Sua Paciencia</strong>
+              <p>Em meio a tantas perguntas idiotas, voce se mantem paciente e cada vez que tu responde, mais feliz eu fico.</p>
+            </span>
+          </span>
+        </button>
+
+        <button class="reason reveal" type="button" aria-label="Abrir motivo: nossas conversas">
+          <span class="inner">
+            <span class="front">
+              <i aria-hidden="true">💬</i>
+              <strong>AQUELA FRASE NO PRIMEIRO DATE</strong>
+              <small>clique para abrir</small>
+            </span>
+
+            <span class="back">
+              <strong>A FRASE</strong>
+              <p>Eu uso aquela frase, sempre que eu to tendo um dia merda. Melhoro quase instantâneamente.</p>
+            </span>
+          </span>
+        </button>
+
+        <button class="reason reveal" type="button" aria-label="Abrir motivo: sua presença">
+          <span class="inner">
+            <span class="front">
+              <i aria-hidden="true">🌙</i>
+              <strong>Seus olhos</strong>
+              <small>clique para abrir</small>
+            </span>
+
+            <span class="back">
+              <strong>Seus olhos</strong>
+              <p>Seus olhos são hipnóticos pra mim. Negros como a noite mais escura. São perfeitos.</p>
+            </span>
+          </span>
+        </button>
+
+        <button class="reason reveal" type="button" aria-label="Abrir motivo: seu carinho">
+          <span class="inner">
+            <span class="front">
+              <i aria-hidden="true">💗</i>
+              <strong>Seu carinho</strong>
+              <small>clique para abrir</small>
+            </span>
+
+            <span class="back">
+              <strong>Suas posses</strong>
+              <p>Sinceramente, voce tem as posses mais gostosas que já experimentei. Tipo, sou louco por elas.
+                Por todas as 3. As duas de baixo e as duas de cima.
+              </p>
+            </span>
+          </span>
+        </button>
+
+        <button class="reason reveal" type="button" aria-label="Abrir motivo: você sendo você">
+          <span class="inner">
+            <span class="front">
+              <i aria-hidden="true">🫶</i>
+              <strong>Você sendo você</strong>
+              <small>clique para abrir</small>
+            </span>
+
+            <span class="back">
+              <strong>Você sendo você</strong>
+              <p>Talvez esse seja o motivo mais simples — e também o melhor de todos. Voce nao mente, você nao joga meus
+                defeitos na minha cara (claro, as vezes me chama de gay, mas enfim), você me deixa confortável pra falar de tudo c vc
+
+              </p>
+            </span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section compliment" aria-labelledby="titulo-elogios">
+      <div class="compliment-card glass reveal">
+        <span class="eyebrow">MÁQUINA DE ELOGIOS</span>
+        <h2 id="titulo-elogios">Está precisando de um elogio?</h2>
+
+        <div
+          class="compliment-output"
+          id="compliment-output"
+          aria-live="polite"
+        >
+          Aperte o botão. Prometo tentar não exagerar.
+        </div>
+
+        <button class="btn primary" id="compliment-btn" type="button">
+          Gerar elogio
+        </button>
+
+        <small>
+          Elogios gerados: <b id="compliment-count">0</b>
+        </small>
+      </div>
+    </section>
+
+    <section class="section game-section" id="jogo" aria-labelledby="titulo-jogo">
+      <header class="section-title reveal">
+        <span class="eyebrow">MINI JOGO</span>
+        <h2 id="titulo-jogo">Capture os corações</h2>
+        <p>Você tem 15 segundos. Cada coração vale um ponto.</p>
+        <p>Cada ponto, vale menos uma pergunta q tu fica puta</p>
+      </header>
+
+      <div class="game-shell reveal">
+        <div class="game-toolbar">
+          <div>
+            <span>Pontos</span>
+            <strong id="score">0</strong>
+          </div>
+
+          <button class="btn primary" id="start-game" type="button">
+            Começar
+          </button>
+
+          <div>
+            <span>Tempo</span>
+            <strong><b id="time-left">15</b>s</strong>
+          </div>
+        </div>
+
+        <div class="game-board" id="game-board">
+          <div class="game-placeholder" id="game-placeholder">
+            <b aria-hidden="true">♥</b>
+            <p>Os corações vão aparecer por aqui.</p>
+          </div>
+        </div>
+
+        <div class="game-result" id="game-result" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section soft" id="surpresa" aria-labelledby="titulo-surpresa">
+      <header class="section-title reveal">
+        <span class="eyebrow">UMA SURPRESA</span>
+        <h2 id="titulo-surpresa">Raspe para descobrir</h2>
+        <p>Use o mouse ou o dedo para revelar o que está escondido.</p>
+      </header>
+
+      <div class="scratch-wrap reveal">
+        <div class="scratch-card">
+          <div class="scratch-prize">
+            <span aria-hidden="true">🎟️</span>
+            <p>Você ganhou</p>
+            <strong>um encontro comigo</strong>
+            <small>
+              Válido para um dia bonito ou feio, uma noite fria ou quente, risadas, bebidas e algo gostoso para comer. 
+            </small>
+            <small>
+              PS: Você também terá auxilio pra 4 gorfadas a vontade!
+            </small>
+          </div>
+
+          <canvas id="scratch-canvas" aria-label="Raspadinha virtual"></canvas>
+        </div>
+
+        <button class="btn ghost" id="reset-scratch" type="button">
+          Refazer raspadinha
+        </button>
+      </div>
+    </section>
+
+    <section class="section forbidden" aria-labelledby="titulo-regra">
+      <div class="forbidden-card reveal">
+        <span class="warning" aria-hidden="true">⚠</span>
+        <h2 id="titulo-regra">ATENÇÃO AQUI:</h2>
+        <p id="forbidden-message">Por sua conta e risco! Talvez voce já saiba o que é, então não clique no botão abaixo.</p>
+
+        <button class="danger" id="forbidden-btn" type="button">
+          NÃO CLIQUE
+        </button>
+      </div>
+    </section>
+
+    <section class="section garden-section" aria-labelledby="titulo-jardim">
+      <header class="section-title reveal">
+        <span class="eyebrow">JARDIM INTERATIVO</span>
+        <h2 id="titulo-jardim">Deixe este lugar mais bonito</h2>
+        <p>Clique em qualquer lugar do jardim para plantar uma flor.</p>
+      </header>
+
+      <div
+        class="garden reveal"
+        id="garden"
+        role="application"
+        aria-label="Jardim interativo"
+      >
+        <div class="moon" aria-hidden="true"></div>
+        <div class="garden-tip">Clique para plantar 🌱</div>
+        <div class="ground" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="section final-section" aria-labelledby="titulo-final">
+      <div class="final-card glass reveal">
+        <span class="eyebrow">FALANDO SÉRIO AGORA</span>
+
+        <h2 id="titulo-final">
+          Eu fiz tudo isso (cá pra nós, foram horas na madruga) porque gosto de ter você por perto. 
+        </h2>
+
+        <p>
+          Gosto das nossas conversas, do jeito como você
+          consegue deixar as coisas mais leves. Gosto de ter teu cheiro no meu travesseiro,
+          gosto da tua voz debochada e esse foi meu jeito BIZARRO de te dizer o quanto
+          você é especial. Pouco tempo de conversa e poucas vezes que nos vemos, mas que 
+          foram os momentos mais legais que eu poderia pedir, por isso, quero que tenham muitos
+          ainda.
+        </p>
+
+        <div class="final-question">
+          <b>E aí, o que achou?</b>
+
+          <div>
+            <button class="btn ghost final-answer" type="button">
+              Você é o cara mais foda que eu já conheci e quero continuar junto com voce!
+            </button>
+
+            <button class="btn primary final-answer" type="button">
+              Você é o cara mais sexy e gostoso que eu já conheci e quero continuar junto com voce!
+            </button>
+          </div>
+        </div>
+
+        <div class="final-response" id="final-response" aria-live="polite"></div>
+        <figure class="final-photo reveal">
+  <img
+    src="assets/nos.jpeg"
+    alt="Uma foto especial nossa"
+    loading="lazy"
+  >
+
+  <figcaption>
+    Espero que essa seja apenas uma entre muitas fotos nossas.
+  </figcaption>
+</figure>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
